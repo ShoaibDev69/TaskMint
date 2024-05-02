@@ -1,5 +1,5 @@
 import { ConnectEmbed } from "@/app/thirdweb";
-import { Accountability } from "../../components/Accoutability";
+import { Accountability } from "../../components/Accountability";
 import { client } from "./client";
 import { chain } from "./chain";
 
