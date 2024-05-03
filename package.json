@@ -15,10 +15,10 @@
     "pino-pretty": "^11.0.0",
     "react": "^18",
     "react-dom": "^18",
-    "thirdweb": "^5.14.0"
+    "thirdweb": "^5.15.0"
   },
   "devDependencies": {
-    "@types/node": "^20",
+    "@types/node": "^20.12.8",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "typescript": "^5"

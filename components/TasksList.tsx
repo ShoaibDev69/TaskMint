@@ -7,7 +7,7 @@ import { TaskCard } from "./TaskCard";
 export const TasksList = () => {
     const [task, setTask] = useState("");
 
-    const { 
+    const {
         data: tasks,
         isLoading: isLoadingTasks
     } = useReadContract({
@@ -16,7 +16,7 @@ export const TasksList = () => {
     });
 
     return (
-        <div style={{ marginTop: "50px"}}>
+        <div style={{ marginTop: "50px" }}>
             {!isLoadingTasks && tasks!.length > 0 ? (
                 tasks?.map((task, index) => (
                     <TaskCard
@@ -37,7 +37,7 @@ export const TasksList = () => {
                     <h3>Create Tasks</h3>
                     <p>Please create the first task to complete.</p>
                     <input
-                        type="text" 
+                        type="text"
                         value={task}
                         onChange={(e) => setTask(e.target.value)}
                         placeholder="Enter task..."
