@@ -61,8 +61,8 @@ export const AddTask = () => {
                             }}
                         >Close</button>
                         <p style={{ fontSize: "12px", marginTop: "30px", marginBottom: "5px" }}>Enter task description:</p>
-                        <input 
-                            type="text" 
+                        <input
+                            type="text"
                             value={task}
                             onChange={(e) => setTask(e.target.value)}
                             placeholder="Enter task..."

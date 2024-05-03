@@ -16,8 +16,8 @@ export const Deposit = () => {
         }}>
             <h3>Deposit</h3>
             <p>Please deposit the funds to hold.</p>
-            <input 
-                type="number" 
+            <input
+                type="number"
                 value={depositAmount}
                 onChange={(e) => setDepositAmount(Number(e.target.value))}
                 placeholder="0.0"

@@ -13,7 +13,7 @@ export default function Home() {
       padding: "20px",
     }}>
       <h1 style={{ marginBottom: "20px" }}>Accountability App</h1>
-      <ConnectEmbed 
+      <ConnectEmbed
         client={client}
         chain={chain}
       />

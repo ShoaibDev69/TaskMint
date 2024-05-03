@@ -22,7 +22,7 @@ export const Accountability = () => {
         method: "getTaskCount"
     });
 
-    const { 
+    const {
         data: lockedFundsAmount,
         isLoading: isLoadingLockedFundsAmount
     } = useReadContract({
@@ -30,7 +30,7 @@ export const Accountability = () => {
         method: "getDeposit"
     });
 
-    if(account) {
+    if (account) {
         return (
             <div style={{ textAlign: "center", minWidth: "500px" }}>
                 <ConnectButton
@@ -44,16 +44,16 @@ export const Accountability = () => {
                         <TasksList />
                     ) : (
                         <>
-                        {!isLoadingLockedFundsAmount && (
-                            <div style={{ marginTop: "20px" }}>
-                                <h3>Locked Funds: {toEther(lockedFundsAmount!)}</h3>
-                                <p style={{ fontSize: "12px"}}>Funds will be returned once all tasks are completed.</p>
-                                <AddTask />
-                                <TasksList />
-                            </div>
-                        )}
+                            {!isLoadingLockedFundsAmount && (
+                                <div style={{ marginTop: "20px" }}>
+                                    <h3>Locked Funds: {toEther(lockedFundsAmount!)}</h3>
+                                    <p style={{ fontSize: "12px" }}>Funds will be returned once all tasks are completed.</p>
+                                    <AddTask />
+                                    <TasksList />
+                                </div>
+                            )}
                         </>
-                    )} 
+                    )}
                 </div>
             </div>
         )
