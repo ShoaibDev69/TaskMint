@@ -42,3 +42,39 @@ You can configure your environment variables in the `.env.local` file. You can f
 ## TypeScript
 
 This project uses TypeScript. If you're not familiar with TypeScript, you can learn about it in the [documentation](https://www.typescriptlang.org/docs/).
+
+## Directory Structure
+
+The project structure is as follows:
+
+```bash
+📦 root
+ ┣ 📂 components
+ ┃ ┣ 📄 Accountability.tsx
+ ┃ ┣ 📄 AddTask.tsx
+ ┃ ┣ 📄 Deposit.tsx
+ ┃ ┣ 📄 TaskCard.tsx
+ ┃ ┗ 📄 TasksList.tsx
+ ┣ 📂 public
+ ┃ ┣ 🖼️ next.svg
+ ┃ ┗ 🖼️ vercel.svg
+ ┣ 📂 src
+ ┃ ┣ 📂 app
+ ┃ ┃ ┣ 📄 chain.ts
+ ┃ ┃ ┣ 📄 client.ts
+ ┃ ┃ ┣ 🖼️ favicon.ico
+ ┃ ┃ ┣ 📄 globals.css
+ ┃ ┃ ┣ 📄 layout.tsx
+ ┃ ┃ ┣ 📄 page.module.css
+ ┃ ┃ ┣ 📄 page.tsx
+ ┃ ┃ ┗ 📄 thirdweb.ts
+ ┃ ┣ 📂 utils
+ ┃ ┃ ┣ 📄 contractABI.ts
+ ┃ ┃ ┗ 📄 contracts.ts
+ ┣ 📄 .gitignore
+ ┣ 📄 README.md
+ ┣ 📄 next.config.mjs
+ ┣ 📄 package.json
+ ┣ 📄 tsconfig.json
+ ┗ 📄 yarn.lock
+```
