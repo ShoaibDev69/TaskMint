@@ -7,68 +7,6 @@ export const CONTRACT_ABI = [
     stateMutability: "nonpayable",
   },
   {
-    type: "event",
-    name: "DepositMade",
-    inputs: [
-      {
-        type: "uint256",
-        name: "amount",
-        indexed: false,
-        internalType: "uint256",
-      },
-    ],
-    outputs: [],
-    anonymous: false,
-  },
-  {
-    type: "event",
-    name: "DepositWithdrawn",
-    inputs: [
-      {
-        type: "uint256",
-        name: "amount",
-        indexed: false,
-        internalType: "uint256",
-      },
-    ],
-    outputs: [],
-    anonymous: false,
-  },
-  {
-    type: "event",
-    name: "TaskCompleted",
-    inputs: [
-      {
-        type: "uint256",
-        name: "taskId",
-        indexed: false,
-        internalType: "uint256",
-      },
-    ],
-    outputs: [],
-    anonymous: false,
-  },
-  {
-    type: "event",
-    name: "TaskCreated",
-    inputs: [
-      {
-        type: "uint256",
-        name: "taskId",
-        indexed: false,
-        internalType: "uint256",
-      },
-      {
-        type: "string",
-        name: "description",
-        indexed: false,
-        internalType: "string",
-      },
-    ],
-    outputs: [],
-    anonymous: false,
-  },
-  {
     type: "function",
     name: "completeTask",
     inputs: [
@@ -103,7 +41,7 @@ export const CONTRACT_ABI = [
   },
   {
     type: "function",
-    name: "getDeposit",
+    name: "getDepositAmount",
     inputs: [],
     outputs: [
       {

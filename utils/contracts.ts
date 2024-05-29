@@ -3,7 +3,7 @@ import { client } from "@/app/client";
 import { getContract } from "thirdweb";
 import { CONTRACT_ABI } from "./contractABI";
 
-const contractAddress = "0xbb67A243e3Cd0a91fbA98cd896FAa32778405920";
+const contractAddress = "0x21750a59CFD663B78b065DA9e6C76BA44c2bc525";
 
 export const contract = getContract({
   client: client,
