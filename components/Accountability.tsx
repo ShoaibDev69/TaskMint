@@ -14,7 +14,7 @@ export const Accountability = () => {
 
     const { data: depositAmount } = useReadContract({
         contract: contract,
-        method: "getDeposit",
+        method: "getDepositAmount",
     });
 
     const { data: taskCount } = useReadContract({
@@ -27,7 +27,7 @@ export const Accountability = () => {
         isLoading: isLoadingLockedFundsAmount
     } = useReadContract({
         contract: contract,
-        method: "getDeposit"
+        method: "getDepositAmount"
     });
 
     if (account) {
