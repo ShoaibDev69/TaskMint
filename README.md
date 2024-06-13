@@ -77,4 +77,3 @@ The project structure is as follows:
  ┣ 📄 package.json
  ┣ 📄 tsconfig.json
  ┗ 📄 yarn.lock
-```
