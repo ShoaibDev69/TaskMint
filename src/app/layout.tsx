@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "TaskMint",
-  description: "A DeFi App for Task Accountability",
+  description: "A Decentralized Task Management App",
 };
 
 export default function RootLayout({
